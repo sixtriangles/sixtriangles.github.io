@@ -1,0 +1,141 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico"/>
+	<title>Six Triangles</title>
+	<style>
+		body {
+			font-family: Arial;
+		  }
+	</style>
+</head>
+<body style="background-color:#2b2d30">
+	<center><h1><a href="index.html"/>Six Triangles</a></h1></center>
+</body>
+<script src="d3.min.js"></script>
+<script>
+	mobileCheck = function() {
+		let check = false;
+		(function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+		return check;
+	};
+	MOBILE = mobileCheck();
+	d3.csv("languages.csv").then(languages=>{
+	d3.csv("Triangles.csv").then(triangles=>{
+	options = [];
+	encoding = "qwertyuiopasdfghjklzxcvbnmEBAFCD"
+	inp = location.search.replace("?","").split("&lang=");
+	lang = inp[1]
+	inp = inp[0]
+	if(inp.length != 4*6)
+		throw Exception();
+	data = []
+	for(i = 0; i < 6; i++)
+	{
+		data[i] = []
+		for(j = 0; j < 2; j++)
+		{
+			data[i][j] = encoding.indexOf(inp[2*(2*i+j)])*32+encoding.indexOf(inp[2*(2*i+j)+1])
+		}
+		data[i][2] = 1000-(data[i][0]+data[i][1])
+		if(data[i][2] > 1000 || data[i] < 0)
+			throw Exception();
+	}
+	width = window.innerWidth;
+	height = window.innerHeight;
+	MULT = Math.min(width,height)
+	width = MULT-50;
+	height = MULT-150;
+	radius = 80;
+	margin = 50;
+	crown=20;
+	datarad = 8;
+	MAX = 8;
+	colorscheme = ['#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462']
+	size = height / 2 - (radius + margin);
+	
+	x0 = width/2;
+	y0 = height/2;
+	
+	function r(x,y)
+	{
+		ang = Math.PI * (i-1) / 3;
+		c = Math.cos(ang);
+		s = Math.sin(ang);
+		y = y + radius;
+		return [(x0 + c*x + s*y), (y0 - c*y + s*x)];
+	}
+	function draw(center, left, right)
+	{
+		svg.append('line').attr('x1', center[0]).attr('y1',center[1]).attr('x2',(left[0]+right[0])/2).attr('y2',(left[1]+right[1])/2).attr('stroke',"#2b2d30").style("stroke-width",2);
+	}
+	
+	center = d3.select('body').append('center')
+	svg = center.append('svg').attr('width',width).attr('height',height);
+	defs = svg.append('defs')
+	for(i = 0; i < 6; i++)
+		for(j = 0; j < 3; j++)
+			defs.append('pattern').attr('id','IMG'+i+"_"+j).attr('x',0).attr('y',0).attr('width',2*crown).attr('height',2*crown).append('image').attr('x',0).attr('y',0).attr('width',2*crown).attr('height',2*crown).attr("xlink:href", "icons/"+i+"_"+j+".png")
+	side = size*2/Math.sqrt(3.0);
+	center.append('h1').text(languages[0][lang]+' ▼').style('color','#fdfdfd')
+	for(i = 0; i < 6; i++)
+	{
+		svg.append('path').attr('d',`M${r(0,0).join(" ")} L${r(side/2,size).join(" ")} L${r(-side/2,size).join(" ")} Z`).attr('fill',colorscheme[i]);
+		t0 = r(0,-crown);
+		t = t0;
+		svg.append('circle').attr('r',crown).attr('cx',t[0]).attr('cy',t[1]).attr('fill',"url(#IMG"+i+"_2)").append('title').text(triangles[i][lang+"2"]);
+		s1 = Math.sin(Math.PI / 6)*crown;
+		c1 = Math.cos(Math.PI / 6)*crown;
+		t1 = r(side/2+c1,size+s1);
+		t = t1;
+		svg.append('circle').attr('r',crown).attr('cx',t[0]).attr('cy',t[1]).attr('fill',"url(#IMG"+i+"_1)").append('title').text(triangles[i][lang+"1"]);
+		t2 = r(-side/2-c1,size+s1);
+		t = t2;
+		svg.append('circle').attr('r',crown).attr('cx',t[0]).attr('cy',t[1]).attr('fill',"url(#IMG"+i+"_0)").append('title').text(triangles[i][lang+"0"]);
+		svg.append('text').attr('fill',colorscheme[i]).text(triangles[i][lang]).attr('x',width/2).attr('y',margin-20).attr('text-anchor','middle').attr('transform','rotate('+(60*(i-1))+","+width/2+","+height/2+")").style('font-size',25)
+		c = r(0,size*2/3);
+		draw(c,t0,t1);
+		draw(c,t0,t2);
+		draw(c,t1,t2);
+		t = r(-side*data[i][0]/2000+side*data[i][1]/2000,size*(data[i][0]+data[i][1])/1000);
+		svg.append('circle').attr('r',datarad).attr('cx',t[0]).attr('cy',t[1]).attr('fill',"white").style('stroke','black');
+	}
+	table = center.append('table').attr('width',"90%").style('text-align','center')
+	function getClassification(index)
+	{
+		temp = data[index].slice()
+		temp.sort(function(a, b){return a-b});
+		console.log(temp)
+		if(temp[1] < 0.7*temp[2])
+		{
+			if(temp[2] >= 900)
+				return languages[6][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[2])])
+			else if(temp[2] >= 750)
+				return languages[5][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[2])])
+			else if(temp[2] >= 500)
+				return languages[4][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[2])])
+			else
+				return languages[3][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[2])])
+		}
+		else if(temp[0] < 0.5*temp[1])
+			return languages[2][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[0])])
+		else
+			return "Centrist";
+	}
+	for(i = 0; i < 6; i+=3)
+	{
+		row = table.append('tr')
+		for(p = 0; p < 3; p++)
+		{
+			j = p;
+			if(i == 3)
+				j = 2-p;
+			cell = row.append('td').attr('width','33.33%').style('padding-top', '50')
+			cell.append('h2').text(triangles[i+j][lang]+":").style('color',colorscheme[i+j])
+			cell.append('h3').text(getClassification(i+j)).style('color',colorscheme[i+j])
+			for(k = 0; k < 3; k++)
+				cell.append('h4').text(triangles[i+j][lang+k]+": "+data[i+j][k]/10.0+"%").style('color',colorscheme[i+j])
+		}
+	}
+	});});
+</script>

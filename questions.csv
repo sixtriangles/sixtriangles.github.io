@@ -1,0 +1,194 @@
+Category,Subcategory,Strength,Multiplier,en
+0,0,4,1,Most or all of the economy should be nationalized
+0,0,4,1,Capitalism should fundamentally be replaced
+0,0,3,1,There should be a national healthcare service
+0,0,2,-1,Government owned industry is usually a bad idea
+0,0,2,1,The government should run the healthcare insurance industry
+0,0,2,1,Public utilities like roads and electricity should all be publicly owned
+0,0,1,1,Capitalism has problems
+0,0,1,1,Some industries such as the postal service should be government-run
+0,1,1,-1,Regulation cannot fix all problems in the economy
+0,1,4,1,Strictly regulated capitalism is the ideal economy
+0,1,3,1,"For any economic problem, there is a regulation that can fix it"
+0,1,3,1,Companies that sneakily break regulations and are caught should be disbanded
+0,1,2,1,The government must regulate the economy to protect the environment
+0,1,2,1,The government is needed to break up monopolies and ensure there is fair competition
+0,1,3,-1,Government regulations rarely completely solve the problem they intended to fix
+0,1,1,1,The economy should consist of private companies with some regulations to ensure fair competition
+0,1,1,1,Consumer protection laws to ensure products are safe are important
+0,2,4,1,The government should not regulate the economy at all
+0,2,4,1,Everything that can be left to the free market should be
+0,2,3,1,The government should never break up a company
+0,2,3,1,Government intervention in the economy almost always makes the economy worse
+0,2,3,1,The market will always make the best product unless the government intervenes
+0,2,2,1,Excessive government intervention hurts the economy
+0,2,3,-1,Oppression by corporations is a much more real threat than oppression by the government
+0,2,1,1,Competition generally makes the economy better
+0,2,1,1,Capitalism is better than any existing alternative
+1,0,4,1,It should be legal to scream fire in a crowded building when there’s no fire
+1,0,4,1,There should be no police force
+1,0,3,1,There should be no legal repercussions for using extremely offensive language
+1,0,3,1,There should be no legal repercussions for supporting any ideology
+1,0,2,1,Cracking down on speech usually makes what you were trying to censor spread more
+1,0,2,1,Freedom of speech is an important concept
+1,0,2,1,Protesting is a way of showing patriotism
+1,0,2,1,Police should be regulated more
+1,0,2,1,Whistleblowers should be strongly protected
+1,0,1,1,I support the right for people I disagree with to voice their opinions
+1,0,1,1,The government has no business looking into most people’s personal lives
+1,0,1,1,The government should not prosecute people for expressing an opinion
+1,1,4,1,Those who disagree with the government should be removed from the country
+1,1,4,1,Protesting the government should be illegal
+1,1,3,1,The government should monitor all citizens to combat terrorism
+1,1,3,1,Police need more power and protection
+1,1,3,1,"If you have nothing to hide, you should have nothing to fear from the government monitoring your communications"
+1,1,2,1,Whistleblowers who leak classified information that costs lives should be prosecuted
+1,1,2,1,We must sacrifice some freedoms to protect our country from terrorism
+1,1,2,1,Government surveillance is necessary in the modern world
+1,1,1,1,It is important for national security that some materials are classified
+1,1,1,1,The government should have access to the emails of suspected terrorists
+1,1,1,1,The government should be able to access the phones of convicted criminals to find additional criminals
+1,1,3,-1,"The government should never be able to prosecute someone for the truth, even if it is a matter of national security"
+1,2,4,1,People who spread misinformation should be punished
+1,2,4,1,Speculations and facts which cannot be confirmed for certain should never be published
+1,2,3,1,Social media platforms should be required to remove posts which promote conspiracy theories
+1,2,3,1,You should not have the right to make claims which are provably false
+1,2,2,1,The media should be penalized for reporting false headlines
+1,2,2,1,Officials who intentionally deceive the population should be in prison
+1,2,2,1,Social media should be responsible for fact checking advertisements that they host
+1,2,1,1,The media should make more of an effort to report facts rather than opinions
+1,2,1,1,The media should report facts even when the media disagrees with the implications of them
+1,2,2,-1,Truth is relative
+1,2,4,-1,"Facts are not real, there are multiple sides to everything"
+1,0,1,-1,You should not have complete freedom of speech
+2,0,4,1,Gay marriage should be illegal
+2,0,4,1,We should have a national religion
+2,0,3,1,Premarital sex should be illegal
+2,0,3,1,Religious values should be taught in all schools
+2,0,2,-1,People should be able to volunteer for experimental treatments when they have no treatment and will die if they do not
+2,0,2,1,It is important to maintain family values
+2,0,2,1,We should have a national language and all immigrants should be required to speak it
+2,0,2,1,The media is biased against traditional values
+2,0,2,1,There are only 2 genders
+2,0,1,1,Murder and theft should be illegal
+2,0,4,-1,Abortion should always be legal
+2,0,2,-1,"It should be legal to alter your infant’s DNA to make them stronger, smarter, etc."
+2,1,4,1,"If AI can govern better than humans can, then AI should rule"
+2,1,4,1,Cars should be banned to protect the environment
+2,1,4,1,The government should require people to eat healthy
+2,1,3,1,Genetic modification research should be legal on humans
+2,1,3,1,Guns should be banned for the general population
+2,1,3,1,There should be a limit to how many children a person may have to prevent overcrowding the Earth
+2,1,3,1,Private jets should be banned
+2,1,2,1,Plastic straws should be banned
+2,1,2,1,We should put effort into expanding civilization beyond earth
+2,1,1,1,Climate change is a real threat
+2,1,1,1,Technological progress is always good
+2,1,1,1,Automation has the potential to give significant benefits to humanity
+2,1,1,1,Evolution should be taught in schools
+2,2,4,1,All drugs should be legal for the adult population
+2,2,1,-1,It is sometimes necessary to ban some substances from the general population
+2,2,3,1,Prostitution should be legal
+2,2,3,1,Marijuana should be legal for the adult population
+2,2,2,1,Pornographic materials should be legal for the adult population
+2,2,2,1,Smoking should be legal
+2,2,1,1,The government should not officially support any religion (or lack of religion)
+2,2,1,1,Freedom of religion is an important concept
+3,0,4,1,Constant war is needed to make an economy thrive
+3,0,4,1,My nation should conquer other nations
+3,0,3,1,There is nothing wrong with taking the resources of weaker nations
+3,0,3,1,Leaders who oppose our interests should be toppled
+3,0,3,1,International law should not bind my nation
+3,0,2,1,"If a nation produces materials for us for a low price using cheap labor, we should still buy"
+3,0,2,1,My nation should only help other nations when it suits our interests
+3,0,1,1,It is important for a government to maintain a strong military so that it can have global influence
+3,0,1,1,A nation without a military is a weak nation
+3,0,1,-1,Diplomatic options should always be tried before war is even considered
+3,0,2,-1,Overthrowing our enemies usually makes the situation worse than how it started
+3,0,3,-1,Military spending is a waste of money
+3,1,4,1,Any deals that another nation wants must be bad for us
+3,1,4,1,Our nation would do better if it did not involve itself with other nations
+3,1,3,1,Our nation should never initiate a war
+3,1,3,1,We should make products in our own nation whenever possible
+3,1,2,1,"It is a waste of our soldiers and resources to topple other governments, regardless of what they do"
+3,1,2,1,"We must respect the sovereignty of other nations, even those who go against our principles"
+3,1,1,1,My nation should focus primarily on domestic policy
+3,1,1,1,Foreign policy has little influence on most people’s daily lives
+3,1,1,-1,It is important for our government to interact with its neighbours
+3,1,3,-1,I care that other nations respect my nation
+3,2,4,1,The world would be better off if countries diplomatically united into a single world government
+3,2,4,1,"In order for humanity to survive, we must get past having separate nations"
+3,2,3,1,We are first and foremost citizens of Earth
+3,2,3,1,It is our duty to care for the citizens of other countries the same as we care for the citizens of our own
+3,2,3,1,The United Nations should be more powerful
+3,2,2,1,I support regional unions such as the European Union
+3,2,2,1,All governments should be held accountable to the international community for things such as war crimes
+3,2,2,1,It is our duty to topple regimes that violate human rights
+3,2,1,1,International cooperation is generally beneficial
+3,2,1,1,International alliances are important to protect my nation
+3,2,1,1,Nations should cooperate with each other unless there is a compelling reason not to
+3,2,2,-1,Foreign aid is a waste of money
+3,2,2,-1,It is important to protect our national identity from other cultures
+4,0,4,1,The government would be best if the people directly voted on most issues
+4,0,4,1,Trials would be better if put directly to popular vote
+4,0,3,1,The government should almost always follow the majority opinion
+4,0,3,1,The population as a whole tends to make good decisions
+4,0,2,1,A country without fair elections cannot be a good country
+4,0,2,1,Each person should have an identically weighted vote
+4,0,1,1,People should have the power to choose their leaders
+4,0,1,1,The government must be by the people for the people
+4,0,1,-1,Popular opinion is not always right
+4,0,2,-1,Democracy often allows the majority to infringe on the rights of those who dissent
+4,0,3,-1,Popular opinion should have little influence on government policy
+4,1,4,-1,My country should not have elections or votes
+4,1,1,1,A nation must have strong leadership to be successful
+4,1,1,1,The government occasionally needs to do things which aren’t popular for the good of its people
+4,1,2,1,Society could not function without leaders and followers
+4,1,2,1,Society requires that some people must have power over others to function
+4,1,3,1,"If given the chance, I would implement my ideology in my country, even if most people were against it"
+4,1,3,1,People who get into power should keep power until they are forced to give it up
+4,1,4,1,A nation should obey its leadership without question
+4,1,4,1,The government should not tolerate dissenting opinions
+4,1,1,-1,People should question the actions of those in power
+4,2,1,1,The government is larger than it needs to be
+4,2,1,1,The government has too much power
+4,2,2,1,I do not trust the government to look after my interests
+4,2,2,1,Small government is usually better than big government
+4,2,3,1,There can never be a government without corruption
+4,2,3,1,The population can protect itself better than the government can protect it
+4,2,4,1,The government should have no say in how people live their lives
+4,2,4,1,People would be better off without a government
+4,2,1,-1,A government provides some important services for the population
+5,0,4,1,Those who take credit for the work of others should lose everything
+5,0,4,1,Children should not be able to inherit anything from their parents
+5,0,3,1,Your income should be directly tied to the value of what you produce
+5,0,3,1,Children of the wealthy should only be able to become wealthy if they have their own independent idea
+5,0,2,1,"It should not matter who you are, only what you can do"
+5,0,2,1,Banks should tolerate more risk for disadvantaged communities to give them the opportunity to succeed as well
+5,0,2,1,Need based scholarships are important for allowing gifted students from poor families to be able to succeed
+5,0,1,1,You should be able to become rich if you work harder than everyone else regardless of how wealthy your family was
+5,0,1,1,You should be able to become rich if you work harder than everyone else regardless of how wealthy your family was
+5,1,4,1,"Communism, if implemented correctly, would be better than capitalism"
+5,1,4,1,"From each according to his ability, to each according to his need"
+5,1,4,1,All people should get the same rewards regardless of their work
+5,1,3,1,There should be no billionaires
+5,1,3,1,I would support a maximum wage
+5,1,3,1,People should be guaranteed enough to live regardless of whether they work
+5,1,2,1,Healthcare should be a right guaranteed to all people
+5,1,2,1,The extremely wealthy make more than they deserve
+5,1,2,1,All people should be guaranteed housing
+5,1,1,1,The government should try to help the poorest people in society
+5,1,1,1,The wealthy have far more than they need
+5,1,1,-1,I would not want to live in a country where everyone had the same salary
+5,1,3,-1,There should not be a minimum wage
+5,2,1,-1,It is important to provide free education to all children
+5,2,4,1,No person should pay a higher percentage of tax on their income than another
+5,2,4,1,There should be no welfare
+5,2,3,1,People who are poor choose to be poor
+5,2,2,-1,"It is unfair that the wealthy pay for tutoring for their children to pass standardized tests, allowing them to further succeed"
+5,2,3,-1,Wealthy districts should not be allowed to put additional money into their school districts when less wealthy districts can’t afford to do the same
+5,2,3,-1,Private schools should be banned
+5,2,2,1,There should be a limit to how much wealth someone can inherit from their parents
+5,2,2,1,I should not have to pay for things that I get no benefit from
+5,2,1,1,We should reduce our welfare program
+5,2,1,1,Parents should be allowed to help their children succeed
