@@ -1,14 +1,16 @@
-index,en
-0,Results
-1,Centrist
-2,Anti-$
-3,Moderate $
-4,$
-5,Extreme $
-6,Fanatic $
-7,Strongly Agree
-8,Agree
-9,Neutral
-10,Disagree
-11,Strongly Disagree
-12,Previous
+index,en,de
+0,Results,Ergebnisse
+1,Centrist,Zentrist
+2,Anti-$,Anti-$
+3,Moderate $,Moderate/r $
+4,$,$
+5,Extreme $,Extreme/r $
+6,Fanatic $,Fanatische/r $
+7,Strongly Agree,Starke Zustimmung
+8,Agree,Zustimmung
+9,Neutral,Neutral/Unsicher
+10,Disagree,Ablehnung
+11,Strongly Disagree,Starke Ablehnung
+12,Previous,Vorherige Aussage
+13,Share your results,Teile dein Ergebnis
+14,Centrist,Zentrist

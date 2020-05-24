@@ -9,7 +9,7 @@
 	
 	gtag('config', 'UA-167439288-1');
 	</script>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico"/>
 	<title>Six Triangles</title>
 	<style>
@@ -29,8 +29,8 @@
 		return check;
 	};
 	MOBILE = mobileCheck();
-	d3.csv("languages.csv").then(languages=>{
-	d3.csv("Triangles.csv").then(triangles=>{
+	d3.csv("languages.csv?v=2").then(languages=>{
+	d3.csv("Triangles.csv?v=2").then(triangles=>{
 	options = [];
 	encoding = "qwertyuiopasdfghjklzxcvbnmEBAFCD"
 	inp = location.search.replace("?","").split("&lang=");
@@ -129,7 +129,7 @@
 		else if(temp[0] < 0.5*temp[1])
 			return languages[2][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[0])])
 		else
-			return "Centrist";
+			return languages[14][lang];
 	}
 	for(i = 0; i < 6; i+=3)
 	{
@@ -146,5 +146,6 @@
 				cell.append('h4').text(triangles[i+j][lang+k]+": "+data[i+j][k]/10.0+"%").style('color',colorscheme[i+j])
 		}
 	}
+	center.append('h3').html(languages[13][lang]+": <a href=\""+window.location.href+"\">"+window.location.href+"</a>").style('color','#fdfdfd')
 	});});
 </script>

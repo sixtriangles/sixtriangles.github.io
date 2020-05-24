@@ -9,6 +9,7 @@
 
 	gtag('config', 'UA-167439288-1');
 	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico"/>
 	<title>Six Triangles</title>
@@ -51,9 +52,9 @@
 		
 		return array;
 	}
-	d3.csv("languages.csv").then(languages=>
+	d3.csv("languages.csv?v=2").then(languages=>
 	{
-	d3.csv("questions.csv").then(questions=>
+	d3.csv("questions.csv?v=2").then(questions=>
 	{
 		questionbank = [];
 		toanswer = []
