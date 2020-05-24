@@ -53,6 +53,8 @@
 	width = window.innerWidth;
 	height = window.innerHeight;
 	MULT = Math.min(width,height)
+	if(MOBILE)
+		MULT = width;
 	width = MULT-50;
 	height = MULT-150;
 	radius = 80;
