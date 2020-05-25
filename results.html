@@ -136,7 +136,14 @@
 				return languages[3][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[2])])
 		}
 		else if(temp[0] < 0.5*temp[1])
-			return languages[2][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[0])])
+		{
+			if(temp[0] < 10)
+				return languages[6][lang].replace("$",languages[2][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[0])]))
+			else if(temp[0] < 50)
+				return languages[5][lang].replace("$",languages[2][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[0])]))
+			else
+				return languages[2][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[0])])
+		}
 		else
 			return languages[14][lang];
 	}
