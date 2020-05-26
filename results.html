@@ -41,7 +41,7 @@
 	options = [];
 	encoding = "qwertyuiopasdfghjklzxcvbnmEBAFCD"
 	inp = location.search.replace("?","").split("&lang=");
-	lang = inp[1]
+	lang = inp[1].split("&")[0]
 	inp = inp[0]
 	if(inp.length != 4*6)
 		throw Exception();
