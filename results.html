@@ -1,14 +1,22 @@
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167439288-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167439288-1"></script>
+
+	<script>
+
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag(){dataLayer.push(arguments);}
+
+	gtag('js', new Date());
+
 	
-	gtag('config', 'UA-167439288-1');
-	</script>
+	gtag('config', 'UA-167439288-1');
+
+	</script>
+
 	<meta charset="UTF-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico"/>
 	<title>Six Triangles</title>
@@ -16,12 +24,17 @@
 		body {
 			font-family: Arial;
 		  }
-		a[href] {
-			color: #1e8ad6;
-		}
+		a[href] {
+
+			color: #1e8ad6;
+
+		}
+
 		
-		a[href]:hover {
-			color: #3ba0e6;
+		a[href]:hover {
+
+			color: #3ba0e6;
+
 		}
 	</style>
 </head>
@@ -119,30 +132,33 @@
 		svg.append('circle').attr('r',datarad).attr('cx',t[0]).attr('cy',t[1]).attr('fill',"white").style('stroke','black');
 	}
 	table = center.append('table').attr('width',"90%").style('text-align','center')
+	function rep(s, w)
+	{
+		return s.replace("$$",w.toLowerCase()).replace("$",w);
+	}
 	function getClassification(index)
 	{
 		temp = data[index].slice()
 		temp.sort(function(a, b){return a-b});
-		console.log(temp)
 		if(temp[1] < 0.7*temp[2])
 		{
 			if(temp[2] >= 900)
-				return languages[6][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[2])])
+				return rep(languages[6][lang], triangles[index][lang+data[index].indexOf(temp[2])]);
 			else if(temp[2] >= 750)
-				return languages[5][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[2])])
+				return rep(languages[5][lang],triangles[index][lang+data[index].indexOf(temp[2])])
 			else if(temp[2] >= 500)
-				return languages[4][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[2])])
+				return rep(languages[4][lang], triangles[index][lang+data[index].indexOf(temp[2])])
 			else
-				return languages[3][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[2])])
+				return rep(languages[3][lang],triangles[index][lang+data[index].indexOf(temp[2])])
 		}
 		else if(temp[0] < 0.5*temp[1])
 		{
 			if(temp[0] < 10)
-				return languages[6][lang].replace("$",languages[2][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[0])]))
+				return rep(languages[6][lang],rep(languages[2][lang],triangles[index][lang+data[index].indexOf(temp[0])]))
 			else if(temp[0] < 50)
-				return languages[5][lang].replace("$",languages[2][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[0])]))
+				return rep(languages[5][lang],rep(languages[2][lang],triangles[index][lang+data[index].indexOf(temp[0])]))
 			else
-				return languages[2][lang].replace("$",triangles[index][lang+data[index].indexOf(temp[0])])
+				return rep(languages[2][lang],triangles[index][lang+data[index].indexOf(temp[0])])
 		}
 		else
 			return languages[14][lang];
