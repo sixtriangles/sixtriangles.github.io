@@ -1,16 +1,16 @@
-index,en,de,eo,ru
-0,Results,Ergebnisse,Rezultoj,Результаты
-1,Centrist,Zentrist,Centristo,Центрист
-2,Anti-$,Anti-$,Mal$$,Анти-$$
-3,Moderate $,Moderate/r $,Modera,Умеренный $$
-4,$,$,$,$
-5,Extreme $,Extreme/r $,Ekstrema $,Крайний $$
-6,Fanatic $,Fanatische/r $,Fanatika $,Фанатичный $$
-7,Strongly Agree,Starke Zustimmung,Forte Konsenta,Полностью согласен(-на)
-8,Agree,Zustimmung,Konsenta,Согласен(-на)
-9,Neutral,Neutral/Unsicher,Neŭtrala,Безразличен(-на)
-10,Disagree,Ablehnung,Malkonsenta,Не согласен(-на)
-11,Strongly Disagree,Starke Ablehnung,Forte Malkonsenta,Полностью несогласен(-на)
-12,Previous,Vorherige Aussage,Antaŭa Demando,Предыдущий вопрос
-13,Share your results,Teile dein Ergebnis,Dividu viajn rezultojn,Поделитесь своими результатами
-14,Centrist,Zentrist,Centristo,Центрист
+index,en,de,eo,ru,pl
+0,Results,Ergebnisse,Rezultoj,Результаты,Wyniki
+1,Centrist,Zentrist,Centristo,Центрист,Centrysta
+2,Anti-$,Anti-$,Mal$$,Анти-$$,Anty-$
+3,Moderate $,Moderate/r $,Modera,Умеренный $$,Umiarkowany $
+4,$,$,$,$,$
+5,Extreme $,Extreme/r $,Ekstrema $,Крайний $$,Skrajny $
+6,Fanatic $,Fanatische/r $,Fanatika $,Фанатичный $$,Fanatyczny $
+7,Strongly Agree,Starke Zustimmung,Forte Konsenta,Полностью согласен(-на),Mocno się zgadzam
+8,Agree,Zustimmung,Konsenta,Согласен(-на),Zgadzam się
+9,Neutral,Neutral/Unsicher,Neŭtrala,Безразличен(-на),Neutralny/Niepewny
+10,Disagree,Ablehnung,Malkonsenta,Не согласен(-на),Nie zgadzam
+11,Strongly Disagree,Starke Ablehnung,Forte Malkonsenta,Полностью несогласен(-на),Mocno się nie zgadzam
+12,Previous,Vorherige Aussage,Antaŭa Demando,Предыдущий вопрос,Poprzedni
+13,Share your results,Teile dein Ergebnis,Dividu viajn rezultojn,Поделитесь своими результатами,Podziel się swoimi wynikami
+14,Centrist,Zentrist,Centristo,Центрист,Centrysta

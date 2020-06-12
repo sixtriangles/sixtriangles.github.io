@@ -1,7 +1,7 @@
-index,en,en0,en1,en2,de,de0,de1,de2,ru,ru0,ru1,ru2,eo,eo0,eo1,eo2
-0,Economics,Control,Regulation,Markets,Wirtschaft,Kontrolle,Regulierung,Märkte,Экономика,Контроль,Регуляция,Рынок,Ekonomio,Kontrolo,Regulado,Merkato
-1,Personal Freedom,Freedom,Security,Truth,Persönliche Freiheit,Freiheit,Sicherheit,Wahrheit,Личная свобода,Свобода,Безопасность,Правда,Persona Libero,Libero,Sekureco,Vero
-2,Culture,Tradition,Progress,Freedom,Kultur,Tradition,Fortschritt,Freiheit,Культура,Традиции,Прогресс,Свобода,Kulturo,Tradicio,Progreso,Libero
-3,Foreign Policy,Imperialism,Isolationism,Globalism,Außenpolitik,Imperialismus,Isolatonismus,Globalismus,Внешние связи,Империализм,Изоляционизм,Глобализм,Ekstera Politiko,Imperiismo,Izolismo,Globalismo
-4,Government,Democracy,Authority,Minarchy,Regierung,Demokratie,Autorität ,Minarchismus,Правительство,Демократия,Автократия,Безвластие,Registaro,Demokratio,Aŭtokrtio,Minarkio
-5,Equality,Opportunity,Outcome,Burden,Gleichheit,Möglichkeit,Erfolg,Last ,Равенство,Возможности,Достаток,Бремя,Egaleco,Ebloj,Enspezo,Ŝarĝo
+index,en,en0,en1,en2,de,de0,de1,de2,ru,ru0,ru1,ru2,eo,eo0,eo1,eo2,pl,pl0,pl1,pl2
+0,Economics,Control,Regulation,Markets,Wirtschaft,Kontrolle,Regulierung,Märkte,Экономика,Контроль,Регуляция,Рынок,Ekonomio,Kontrolo,Regulado,Merkato,Ekonomia,Kontrola,Regulacja,Rynek
+1,Personal Freedom,Freedom,Security,Truth,Persönliche Freiheit,Freiheit,Sicherheit,Wahrheit,Личная свобода,Свобода,Безопасность,Правда,Persona Libero,Libero,Sekureco,Vero,Wolność osobista,Wolność słowa,Bezpieczeństwo,"Prawda,"
+2,Culture,Tradition,Progress,Freedom,Kultur,Tradition,Fortschritt,Freiheit,Культура,Традиции,Прогресс,Свобода,Kulturo,Tradicio,Progreso,Libero,Kultura,Tradycja,Postęp,Wolność osobista
+3,Foreign Policy,Imperialism,Isolationism,Globalism,Außenpolitik,Imperialismus,Isolatonismus,Globalismus,Внешние связи,Империализм,Изоляционизм,Глобализм,Ekstera Politiko,Imperiismo,Izolismo,Globalismo,Polityka zagraniczna,Imperializm,Izolacjonizm,Globalizm
+4,Government,Democracy,Authority,Minarchy,Regierung,Demokratie,Autorität ,Minarchismus,Правительство,Демократия,Автократия,Безвластие,Registaro,Demokratio,Aŭtokrtio,Minarkio,Rząd,Demokracja,Autorytaryzm,Minarchizm
+5,Equality,Opportunity,Outcome,Burden,Gleichheit,Möglichkeit,Erfolg,Last ,Равенство,Возможности,Достаток,Бремя,Egaleco,Ebloj,Enspezo,Ŝarĝo,Równość,Równe szanse,Dochód minimalny,Równe obciążenie
