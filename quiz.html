@@ -1,14 +1,22 @@
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167439288-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 
-	gtag('config', 'UA-167439288-1');
-	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167439288-1"></script>
+
+	<script>
+
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag(){dataLayer.push(arguments);}
+
+	gtag('js', new Date());
+
+
+	gtag('config', 'UA-167439288-1');
+
+	</script>
+
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico"/>
@@ -17,18 +25,24 @@
 		body {
 			font-family: Arial;
 		  }
-		a[href] {
-			color: #1e8ad6;
-		}
+		a[href] {
+
+			color: #1e8ad6;
+
+		}
+
 		
-		a[href]:hover {
-			color: #3ba0e6;
+		a[href]:hover {
+
+			color: #3ba0e6;
+
 		}
 	</style>
 </head>
 <body style="background-color:#2b2d30">
 </body>
 <script src="d3.min.js"></script>
+<script src="seedrandom.min.js"></script>
 <script>
 	mobileCheck = function() {
 		let check = false;
@@ -72,7 +86,11 @@
 		questionbank = [];
 		toanswer = []
 		results = []
-		length = location.search.replace("?","").split("lang=")[1].split("&length=")[1]*1
+		if(location.search.split("&seed=").length > 1)
+		{
+			Math.seedrandom(location.search.split("&seed=")[1])
+		}
+		length = location.search.replace("?","").split("lang=")[1].split("&length=")[1].split("&seed=")[0]*1
 		for(i = 0; i < 6; i++)
 		{
 			results[i] = []
