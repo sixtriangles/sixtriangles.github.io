@@ -1,16 +1,16 @@
-index,en,de,eo,ru,pl,it,ua
-0,Results,Ergebnisse,Rezultoj,Результаты,Wyniki,Risultati,Результати
-1,Centrist,Zentrist,Centristo,Центрист,Centrysta,Centrista,Центрист
-2,Anti-$,Anti-$,Mal$$,Анти-$$,Anty-$,Anti-$,Анти-$$
-3,Moderate $,Moderate/r $,Modera,Умеренный $$,Umiarkowany $,$ Moderato/a,Помірний $$
-4,$,$,$,$,$,$,$
-5,Extreme $,Extreme/r $,Ekstrema $,Крайний $$,Skrajny $,$ Estremo/a,Радикальний $$
-6,Fanatic $,Fanatische/r $,Fanatika $,Фанатичный $$,Fanatyczny $,$ Fanatico/a,Фанатичний $$
-7,Strongly Agree,Starke Zustimmung,Forte Konsenta,Полностью согласен(-на),Zdecydowanie się zgadzam,Fortemente d'accordo,Повністю згоден(-на)
-8,Agree,Zustimmung,Konsenta,Согласен(-на),Zgadzam się,D'accordo,Згоден(-на)
-9,Neutral,Neutral/Unsicher,Neŭtrala,Безразличен(-на),Neutralny/Niepewny,Neutrale,Непевний(-на)/Нейтральний(-на)
-10,Disagree,Ablehnung,Malkonsenta,Не согласен(-на),Nie zgadzam się,In disaccordo,Не згоден(-на)
-11,Strongly Disagree,Starke Ablehnung,Forte Malkonsenta,Полностью несогласен(-на),Zdecydowanie się nie zgadzam,Fortemente in disaccordo,Повністю не згоден(-на)
-12,Previous,Vorherige Aussage,Antaŭa Demando,Предыдущий вопрос,Poprzednie,Precedente,Попереднє питання
-13,Share your results,Teile dein Ergebnis,Dividu viajn rezultojn,Поделитесь своими результатами,Podziel się swoimi wynikami,Condividi i tuoi risultati,Поділитися своїми результатами
-14,Centrist,Zentrist,Centristo,Центрист,Centrysta,Centrista,Центрист
+index,en,de,eo,ru,pl,it,ua,ko
+0,Results,Ergebnisse,Rezultoj,Результаты,Wyniki,Risultati,Результати,결과
+1,Centrist,Zentrist,Centristo,Центрист,Centrysta,Centrista,Центрист,중도주의자
+2,Anti-$,Anti-$,Mal$$,Анти-$$,Anty-$,Anti-$,Анти-$$,반(안티)-$
+3,Moderate $,Moderate/r $,Modera,Умеренный $$,Umiarkowany $,$ Moderato/a,Помірний $$,온건적 $
+4,$,$,$,$,$,$,$,$
+5,Extreme $,Extreme/r $,Ekstrema $,Крайний $$,Skrajny $,$ Estremo/a,Радикальний $$,극단적 $
+6,Fanatic $,Fanatische/r $,Fanatika $,Фанатичный $$,Fanatyczny $,$ Fanatico/a,Фанатичний $$,광신적 $
+7,Strongly Agree,Starke Zustimmung,Forte Konsenta,Полностью согласен(-на),Zdecydowanie się zgadzam,Fortemente d'accordo,Повністю згоден(-на),적극 동의
+8,Agree,Zustimmung,Konsenta,Согласен(-на),Zgadzam się,D'accordo,Згоден(-на),동의
+9,Neutral,Neutral/Unsicher,Neŭtrala,Безразличен(-на),Neutralny/Niepewny,Neutrale,Непевний(-на)/Нейтральний(-на),중립
+10,Disagree,Ablehnung,Malkonsenta,Не согласен(-на),Nie zgadzam się,In disaccordo,Не згоден(-на),비동의
+11,Strongly Disagree,Starke Ablehnung,Forte Malkonsenta,Полностью несогласен(-на),Zdecydowanie się nie zgadzam,Fortemente in disaccordo,Повністю не згоден(-на),적극 비동의
+12,Previous,Vorherige Aussage,Antaŭa Demando,Предыдущий вопрос,Poprzednie,Precedente,Попереднє питання,뒤로가기
+13,Share your results,Teile dein Ergebnis,Dividu viajn rezultojn,Поделитесь своими результатами,Podziel się swoimi wynikami,Condividi i tuoi risultati,Поділитися своїми результатами,결과 공유하기
+14,Centrist,Zentrist,Centristo,Центрист,Centrysta,Centrista,Центрист,중도주의자
